@@ -109,9 +109,26 @@
           console.log(myArray);
           myArray.splice(1, 1);
           console.log(myArray);
+          console.log(myArray);
+          console.log(myArray);
 
+        var meuObjeto = {
+          nome: "Antonio",
+          sobreNome: "Teixeira",
+          endereco: {
+            rua: "nannja",
+            numero: "51645",
+            complemento: "casa",
+            bairro: "vila loka",
+            cidade: "Paraty",
+            estado: "RJ",
+          },
+          mostrarMinhasinformacoes: function () {
+            alert ("Nome:" + this.sobreNome + "Endereco:" + this.endereco.rua + this.endereco.numero + this.endereco.complemento + this.endereco.bairro + this.endereco.cidade + this.endereco.estado);
+           }
+         };
 
-
+         meuObjeto.mostrarMinhasinformacoes();
     </script>
   </body>
 </html>
